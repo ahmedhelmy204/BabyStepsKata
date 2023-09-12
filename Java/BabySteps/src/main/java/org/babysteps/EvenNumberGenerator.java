@@ -2,6 +2,6 @@ package org.babysteps;
 
 public class EvenNumberGenerator {
     int generate(){
-        return 14;
+        return 54;
     }
 }

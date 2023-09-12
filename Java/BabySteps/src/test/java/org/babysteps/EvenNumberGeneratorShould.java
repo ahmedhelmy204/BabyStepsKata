@@ -55,4 +55,16 @@ class EvenNumberGeneratorShould {
         // Assert
         assertTrue(generatedNumber < 100);
     }
+
+    @Test
+    void GenerateEvenNumberCanBeDividedBy3(){
+        // Arrange
+        EvenNumberGenerator evenNumberGenerator = new EvenNumberGenerator();
+
+        // Act
+        int generatedNumber = evenNumberGenerator.generate();
+
+        // Assert
+        assertTrue(generatedNumber % 3 == 0);
+    }
 }
