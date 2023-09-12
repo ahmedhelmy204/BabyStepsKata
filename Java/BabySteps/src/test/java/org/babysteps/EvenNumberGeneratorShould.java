@@ -31,4 +31,16 @@ class EvenNumberGeneratorShould {
         // Assert
         assertTrue(generatedNumberString.endsWith("4"));
     }
+
+    @Test
+    void GenerateEvenNumberGreaterThan9(){
+        // Arrange
+        EvenNumberGenerator evenNumberGenerator = new EvenNumberGenerator();
+
+        // Act
+        int generatedNumber = evenNumberGenerator.generate();
+
+        // Assert
+        assertTrue(generatedNumber > 9);
+    }
 }
