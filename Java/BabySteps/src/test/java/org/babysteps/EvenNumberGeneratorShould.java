@@ -67,4 +67,18 @@ class EvenNumberGeneratorShould {
         // Assert
         assertTrue(generatedNumber % 3 == 0);
     }
+
+    @Test
+    void GenerateEvenNumberWithSumOfDigitsEqualTo6(){
+        // Arrange
+        EvenNumberGenerator evenNumberGenerator = new EvenNumberGenerator();
+
+        // Act
+        int generatedNumber = evenNumberGenerator.generate();
+        int firstDigit = generatedNumber / 10;
+        int secondDigit = generatedNumber % 10;
+
+        // Assert
+        assertTrue((firstDigit + secondDigit) == 6);
+    }
 }
