@@ -4,4 +4,5 @@
 - Ends in 4.
 - Greater than 9.
 - Less than 100.
+- Can be devided by 3.
 - Adding both digits should result in 6.
