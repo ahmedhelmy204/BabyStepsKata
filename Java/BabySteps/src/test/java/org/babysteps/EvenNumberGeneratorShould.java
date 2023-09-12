@@ -43,4 +43,16 @@ class EvenNumberGeneratorShould {
         // Assert
         assertTrue(generatedNumber > 9);
     }
+
+    @Test
+    void GenerateEvenNumberLessThan100(){
+        // Arrange
+        EvenNumberGenerator evenNumberGenerator = new EvenNumberGenerator();
+
+        // Act
+        int generatedNumber = evenNumberGenerator.generate();
+
+        // Assert
+        assertTrue(generatedNumber < 100);
+    }
 }
